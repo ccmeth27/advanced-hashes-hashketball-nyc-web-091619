@@ -114,6 +114,16 @@ def num_points_scored(player_search)
     end
   end
 end
+num_points_scored("Jeff Adrien")
+num_points_scored("Bismack Biyombo")
+num_points_scored("DeSagna Diop")
+num_points_scored("Ben Gordon")
+num_points_scored("Kemba Walker")
+num_points_scored("Alan Anderson")
+num_points_scored("Reggie Evans")
+num_points_scored("Brook Lopez")
+num_points_scored("Mason Plumlee")
+num_points_scored("Jason Terry")
 
 def shoe_size(player_search)
   game_hash.each do |team, team_info|
