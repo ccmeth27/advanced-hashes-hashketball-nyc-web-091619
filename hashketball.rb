@@ -110,20 +110,20 @@ def all_players
 end
 # This is used to help with other methods
 
-def num_points_scored(player_search)
+def num_points_scored(name)
   game_hash.each do |team, team_info|
     team_info[:players].each do |player|
-      if player[:player_name] == player_search
+      if player[:player_name] == name
         return player[:points]
       end
     end
   end
 end
 
-def shoe_size(player_search)
+def shoe_size(name)
   game_hash.each do |team, team_info|
     team_info[:players].each do |player|
-      if player[:player_name] == player_search
+      if player[:player_name] == name
         return player[:shoe]
       end
     end
@@ -149,8 +149,8 @@ def team_colors(team_name)
   find_team(team_name)[:colors]
 end
 
-def player_stats(player_name)
-  all_players(player_name)[:players].map { |player_name, stats| [:stats] }
+def player_stats(name)
+  all_players(name)[:players].map { |name, stats| [:stats] }
 end
 
 def player_numbers(team_name)
