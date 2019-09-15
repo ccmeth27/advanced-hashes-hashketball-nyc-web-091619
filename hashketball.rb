@@ -115,9 +115,7 @@ def player_stats(name)
     team_info.each do |key, value|
       if key == :players
         value.each do |player|
-          if name == player[:player_name]
-            player.delete(:player_name)
-            return player
+          player
           end
         end
       end
