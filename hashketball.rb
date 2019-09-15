@@ -149,8 +149,8 @@ def player_stats(player_search)
   all_players(player_search.to_sym)
 end
 
-def player_numbers(player_search)
-  player_stats(player_search)[:number]
+def player_numbers(team_name)
+  (team_name)[:number]
 end
 
 def big_shoe_rebounds
