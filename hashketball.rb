@@ -149,8 +149,8 @@ def team_colors(team_name)
   find_team(team_name)[:colors]
 end
 
-def player_stats(player_search)
-  all_players[player_search.to_sym]
+def player_stats(player_name)
+  all_players(player_name)
 end
 
 def player_numbers(team_name)
