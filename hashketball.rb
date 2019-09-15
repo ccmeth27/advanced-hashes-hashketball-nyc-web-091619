@@ -128,11 +128,6 @@ def shoe_size(player_search)
   end
 end
 
-def team_colors(team_input)
-  game_hash.each do |team, team_info|
-    team_input[:]
-  
-end
 
 def all_teams
   game_hash.values
@@ -143,7 +138,11 @@ def find_team(team_name)
 end
 
 def team_names
-  all_teams.map { |team| team[:team_name]
+  all_teams.map { |team| team[:team_name] }
+end
+
+def team_colors(team_name)
+  all_teams.map { |team| team{:team_colors]
 end
 
 def player_stats(player_search)
