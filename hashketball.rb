@@ -135,7 +135,7 @@ def team_colors(team_input)
 end
 
 def team_names(home_away)
-  
+  game_hash.each do |team, team_info
 end
 
 def player_stats(player_search)
