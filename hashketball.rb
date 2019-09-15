@@ -134,8 +134,9 @@ def team_colors(team_input)
   
 end
 
-def team_names(home_away)
-  game_hash.each do |team, team_info
+def team_names(team_input)
+  game_hash.each do |team, team_info|
+    if g == 
 end
 
 def player_stats(player_search)
