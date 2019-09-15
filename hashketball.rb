@@ -146,7 +146,7 @@ def team_names
 end
 
 def team_colors(team_name)
-  find_team.map { |team| team{:team_colors]
+  find_team.map { |team| team{:colors] }
 end
 
 def player_stats(player_search)
