@@ -152,7 +152,7 @@ def player_numbers(team_name)
 end
 
 def big_shoe_rebounds
-  
+  all_players.max_by { |name, stats| stats[:shoe] }
 end
 
 
