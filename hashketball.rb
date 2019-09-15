@@ -149,7 +149,7 @@ def player_numbers(player_search)
 end
 
 def player_stats(player_search)
-  all_players
+  all_players(name.to_sym)
 end
 
 def big_shoe_rebounds
