@@ -107,8 +107,6 @@ end
 def all_players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
-
-def player_stats(name)
   
 def num_points_scored(player_search)
   game_hash.each do |team, team_info|
@@ -151,7 +149,7 @@ def player_numbers(player_search)
 end
 
 def player_stats(player_search)
-  
+  all_players
 end
 
 def big_shoe_rebounds
