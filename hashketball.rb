@@ -142,9 +142,8 @@ def find_team(team_name)
   all_teams.find { |team| team[:team_name] == team_name }
 end
 
-def team_names(team_name)
-  game_hash.each do |team, team_info|
-    if g == 
+def team_names
+  all_teams
 end
 
 def player_stats(player_search)
