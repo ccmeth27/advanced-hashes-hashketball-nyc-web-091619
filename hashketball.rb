@@ -3,8 +3,8 @@ def game_hash
     :home => {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
-      players: [
-        { player_name: 'Alan Anderson',
+      players: {
+        player_name: 'Alan Anderson',
           number: 0,
           shoe: 16,
           points: 22,
@@ -100,7 +100,7 @@ def game_hash
           steals: 7,
           blocks: 5,
           slam_dunks: 12 }
-      ]
+    }
     }
   }
 end  
@@ -150,7 +150,8 @@ def team_colors(team_name)
 end
 
 def player_stats(name)
-  
+  all_players[name.to_sym]
+end
 
 def player_numbers(team_name)
   find_team(team_name)[:players].map { |player_name, stats| stats[:number] }
