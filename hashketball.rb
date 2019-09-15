@@ -139,10 +139,7 @@ def team_names(home_away)
 end
 
 def player_numbers(player_search)
-  game_hash.each do |team, team_info|
-    team_info[:players].each do |player|
-      if player[:player_name] == player_search
-        return player[:number]
+  player_stats
       end
     end
   end
