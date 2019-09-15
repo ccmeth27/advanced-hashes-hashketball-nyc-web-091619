@@ -154,7 +154,7 @@ def player_stats(player_search)
 end
 
 def player_numbers(team_name)
-  find_team(team_name)[:players].map { |player_search, stats| stats }
+  find_team(team_name)[:players].map { |player_search, stats| stats[:number] }
 end
 
 def big_shoe_rebounds
