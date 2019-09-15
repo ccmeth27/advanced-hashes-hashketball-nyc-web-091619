@@ -137,7 +137,7 @@ end
 def find_team(team_name)
   all_teams.find { |team| team[:team_name] == team_name }
 end
-
+# This is used to help with other methods
 def team_names
   all_teams.map { |team| team[:team_name] }
 end
