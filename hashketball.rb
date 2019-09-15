@@ -110,6 +110,10 @@ def all_players
 end
 # This is used to help with other methods
 
+def player_stats(name)
+  all_players[name.to_sym]
+end
+
 def num_points_scored(name)
   game_hash.each do |team, team_info|
     team_info[:players].each do |player|
@@ -147,10 +151,6 @@ end
 
 def team_colors(team_name)
   find_team(team_name)[:colors]
-end
-
-def player_stats(name)
-  all_players[name.to_sym]
 end
 
 def player_numbers(team_name)
