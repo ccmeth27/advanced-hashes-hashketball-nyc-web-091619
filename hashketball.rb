@@ -150,7 +150,7 @@ def team_colors(team_name)
 end
 
 def player_stats(player_search)
-  all_players(player_search.to_sym)
+  all_players[player_search.to_sym
 end
 
 def player_numbers(team_name)
