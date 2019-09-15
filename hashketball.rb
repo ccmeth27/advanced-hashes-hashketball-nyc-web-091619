@@ -150,8 +150,7 @@ def team_colors(team_name)
 end
 
 def player_stats(name)
-  all_players[name]
-end
+  
 
 def player_numbers(team_name)
   find_team(team_name)[:players].map { |player_name, stats| stats[:number] }
