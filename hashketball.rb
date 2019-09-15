@@ -108,7 +108,8 @@ end
 def all_players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
-  
+# This is used to help with other methods
+
 def num_points_scored(player_search)
   game_hash.each do |team, team_info|
     team_info[:players].each do |player|
@@ -133,11 +134,13 @@ end
 def all_teams
   game_hash.values
 end
+# This is used to help with other methods
 
 def find_team(team_name)
   all_teams.find { |team| team[:team_name] == team_name }
 end
 # This is used to help with other methods
+
 def team_names
   all_teams.map { |team| team[:team_name] }
 end
