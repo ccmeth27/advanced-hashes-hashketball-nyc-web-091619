@@ -116,7 +116,6 @@ def player_stats(name)
       if key == :players
         value.each do |player|
           player
-          end
         end
       end
     end
