@@ -163,9 +163,7 @@ def most_points_scored
   all_players.max_by { |name, stats| stats[:points] }
 end
 
-def most_points 
-  player_w_most_points[1][:points]
-end
+
 
 
 
