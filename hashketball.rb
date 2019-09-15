@@ -159,8 +159,13 @@ def big_shoe_rebounds
  biggest_feet[1][:rebounds]
 end
 
+def player_w_most_points
+  all_players.max_by { |name, stats| stats[:points] }
+end
 
-
+def most_points 
+  player_w_most_points[1][:points]
+end
 
 
 
