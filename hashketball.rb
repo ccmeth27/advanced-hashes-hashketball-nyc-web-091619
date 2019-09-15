@@ -156,7 +156,7 @@ def biggest_feet
 end
 
 def big_shoe_rebounds
- 
+ biggest_feet[1][:rebounds]
 end
 
 
