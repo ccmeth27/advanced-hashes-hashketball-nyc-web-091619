@@ -150,11 +150,11 @@ def team_colors(team_name)
 end
 
 def player_stats(player_name)
-  all_players(player_name)
+  all_players(player_name)[:players].map { |player_name, stats| [:stats] }
 end
 
 def player_numbers(team_name)
-  find_team(team_name)[:players].map { |player_search, stats| stats[:number] }
+  find_team(team_name)[:players].map { |player_name, stats| stats[:number] }
 end
 
 def big_shoe_rebounds
