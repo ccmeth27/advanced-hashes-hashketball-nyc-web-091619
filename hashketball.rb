@@ -150,7 +150,7 @@ def team_colors(team_name)
 end
 
 def player_stats(name)
-  all_players(name)[:players].map { |name, stats| [:stats] }
+  all_players[name.to_sym]
 end
 
 def player_numbers(team_name)
