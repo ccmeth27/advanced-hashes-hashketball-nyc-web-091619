@@ -138,15 +138,12 @@ def team_names(home_away)
   
 end
 
-def player_numbers(player_search)
-  player_stats
-      end
-    end
-  end
-end
-
 def player_stats(player_search)
   all_players(player_search.to_sym)
+end
+
+def player_numbers(player_search)
+  player_stats
 end
 
 def big_shoe_rebounds
