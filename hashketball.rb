@@ -143,7 +143,7 @@ def player_stats(player_search)
 end
 
 def player_numbers(player_search)
-  player_stats
+  player_stats(player_search)[:number]
 end
 
 def big_shoe_rebounds
