@@ -111,7 +111,7 @@ end
 # This is used to help with other methods
 
 def player_stats(name)
-  all_players.map(name)
+  all_players.map { |name, stats| stats }
 end
 
 def num_points_scored(name)
