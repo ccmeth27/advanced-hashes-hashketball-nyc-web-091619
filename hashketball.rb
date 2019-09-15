@@ -134,7 +134,15 @@ def team_colors(team_input)
   
 end
 
-def team_names(team_input)
+def all_teams
+  game_hash.values
+end
+
+def find_team(team_name)
+  all_teams.find { |team| team[:team_name] == team_name }
+end
+
+def team_names(team_name)
   game_hash.each do |team, team_info|
     if g == 
 end
