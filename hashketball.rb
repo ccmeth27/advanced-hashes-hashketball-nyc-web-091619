@@ -111,15 +111,14 @@ end
 # This is used to help with other methods
 
 def player_stats(name)
-  game_hash.each do |team, team_info|
-    team_info.each do |key, value|
-      if key == :players
-        value.each do |player|
-          player
-        end
-      end
-    end
-  end
+  new_hash = game_hash
+  new_hash.each do |teams, data|
+    data[:players].each do |player_name, player_data|
+      if player_name == name
+        return new_hash[teams][:players][name]
+      end 
+    end 
+  end 
 end
 
 def num_points_scored(name)
