@@ -264,7 +264,7 @@ end
       #expect(winning_team).to eq("Brooklyn Nets")
     #end
 
-  end
+  #end
 
   #describe '#player_with_longest_name' do
 
