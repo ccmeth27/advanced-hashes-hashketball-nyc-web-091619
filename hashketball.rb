@@ -125,7 +125,8 @@ def shoe_size(player_search)
   end
 end
 
-def team_colors(home_away)
+def team_colors(team_input)
+  game_hash.
   
 end
 
