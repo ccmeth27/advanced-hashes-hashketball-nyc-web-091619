@@ -143,7 +143,7 @@ def find_team(team_name)
 end
 
 def team_names
-  all_teams.map { |team| 
+  all_teams.map { |team| team[:team_name]
 end
 
 def player_stats(player_search)
