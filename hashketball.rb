@@ -111,7 +111,18 @@ end
 # This is used to help with other methods
 
 def player_stats(name)
-  all_players(name).map { |name, stats| stats }
+  game_hash.each do |team, team_info|
+    team_info.each do |key, value|
+      if key == :players
+        value.each do |player|
+          if name == player[:player_name]
+            player.delete(:player_name)
+            return player
+          end
+        end
+      end
+    end
+  end
 end
 
 def num_points_scored(name)
