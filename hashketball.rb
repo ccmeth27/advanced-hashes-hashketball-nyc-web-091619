@@ -117,7 +117,7 @@ end
 def num_points_scored(name)
   player_stats(name)[:points]
 end
-
+player_stats("Jeff Adrien")
 def shoe_size(name)
   player_stats(name)[:shoe]
 end
@@ -141,7 +141,7 @@ def team_colors(team_name)
 end
 
 def player_numbers(team_name)
-  find_team(team_name)[:players].map { |player_name, stats| stats[:number] }
+  find_team(team_name)[:players].map { |name, stats| stats[:number] }
 end
 
 def big_shoe_rebounds
